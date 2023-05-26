@@ -29,8 +29,8 @@ body {
 
   display: grid;
   grid-template-areas: "profile timeline";
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 100vh;
+  grid-template-rows: 1fr;
+  height: 100vh;
 }
 
 nav {
@@ -101,7 +101,6 @@ a:hover {
 
 aside {
   grid-area: profile;
-
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,6 +112,8 @@ aside {
 
   background-image: url("./assets/background.svg");
   background-position: top right;
+  
+   background-position: top right;
   background-repeat: no-repeat;
   background-size: auto 100%;
 }
@@ -148,10 +149,9 @@ aside span {
   color: #9e9ea0;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   body {
-    grid-template-column: 1fr;
-    grid-template-rows: 0.2fr 0.8fr;
+    grid-template-column: 1fr 1fr;
     grid-template-areas:
     "profile"
     "timeline";
