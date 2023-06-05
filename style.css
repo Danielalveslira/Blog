@@ -1,17 +1,17 @@
 @keyframes body {
-    0% {background-color: rgb(226, 66, 66);}
-    15% {background-color: blueviolet;}
-    20% {background-color: rgb(18, 184, 206);}
-    25% {background-color: rgb(240, 217, 15);}
-    30% {background-color: rgb(252, 124, 4);}
-    40% {background-color: rgb(131, 243, 2);}
-    50% {background-color: rgb(9, 48, 58);}
-    55% {background-color: rgb(236, 13, 188);}
-    60% {background-color: rgb(233, 49, 49);}
-    70% {background-color: rgb(1, 28, 63);}
-    80% {background-color: rgb(20, 233, 116);}
-    90% {background-color: rgb(12, 226, 241);}
-    100% {background-color: rgb(0, 172, 43);}
+    0% {color: rgb(226, 66, 66);}
+    15% {color: blueviolet;}
+    20% {color: rgb(18, 184, 206);}
+    25% {color: rgb(240, 217, 15);}
+    30% {color: rgb(252, 124, 4);}
+    40% {color: rgb(131, 243, 2);}
+    50% {color: rgb(9, 48, 58);}
+    55% {color: rgb(236, 13, 188);}
+    60% {color: rgb(233, 49, 49);}
+    70% {color: rgb(1, 28, 63);}
+    80% {color: rgb(20, 233, 116);}
+    90% {color: rgb(12, 226, 241);}
+    100% {color: rgb(0, 172, 43);}
 }
 
 * {
