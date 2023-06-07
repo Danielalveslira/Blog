@@ -79,7 +79,7 @@ aside h6 {
   font-size: 15px;
   text-align: center;
   animation-name: body;
-  animation: body 10s infinite;
+  animation: body 60s infinite;
 }
 
 a {
