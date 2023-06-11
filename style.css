@@ -22,9 +22,11 @@
   box-sizing: border-box;
 }
 
+/* Cores dark/light mode  */
 :root {
   --dark-mode-word: #121215;
   --light-mode-word: #bebebf;
+  --strong-white: #F6F1F1;
 }
 
 .checkbox {
@@ -113,6 +115,24 @@ body {
 body.dark {
   background-color: var(--dark-mode-word);
 }
+body.dark .memory p {
+  color: var(--light-mode-word);
+}
+body.dark .memory small {
+  color: var(--light-mode-word);
+}
+body.dark .memory h1 {
+  color: var(--strong-white);
+}
+body.dark aside p {
+  color: var(--strong-white);
+}
+body.dark a {
+  color: var(--strong-white);
+}
+body.dark a:hover {
+  color: #F97B22;
+}
 
 nav {
   padding: 64px;
@@ -134,10 +154,12 @@ nav {
 .memory small {
   color: #bebebf;
   font-size: 0.75rem;
+  color: var(--dark-mode-word)
 }
 
 .memory h1 {
   font-size: 2rem;
+  color: var(--dark-mode-word)
 }
 
 aside h6 {
@@ -148,7 +170,7 @@ aside h6 {
 }
 
 a {
-  color: #eaeaea; /* Define a cor padrão do link para azul */
+  color: var(--dark-mode-word); /* Define a cor padrão do link para azul */
 }
 
 a:hover {
@@ -177,7 +199,7 @@ a:hover {
 
 .memory p {
   font-size: 1.2rem;
-  color: #bebebf;
+  color: var(--dark-mode-word);
   line-height: 28px;
 }
 
@@ -198,7 +220,7 @@ aside {
    background-position: top right;
   background-repeat: no-repeat;
   background-size: auto 100%;
-  padding: 35px
+  padding: 35px;
 }
 
 aside img:nth-child(1) {
@@ -228,11 +250,7 @@ aside img:nth-child(2) {
 aside p {
   font-size: 2rem;
   text-align: center;
-}
-
-aside span {
-  font-size: 0.75rem;
-  color: var(--light-mode-word);
+  color: var(--dark-mode-word)
 }
  
 @media (max-width: 800px) {
