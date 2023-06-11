@@ -2,7 +2,7 @@
 
 * {
   margin: 0;
-  padding;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -317,6 +317,15 @@ aside p {
   nav {
     overflow-y: visible;
     padding: 22px;
+  }
+
+  .footer ul {
+    text-align: center;
+  }
+  
+  .footer ul li {
+    display: block;
+    padding: 10px;
   }
 
 }
