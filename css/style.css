@@ -1,20 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 @keyframes body {
-    0% {color: rgb(226, 66, 66);}
-    15% {color: blueviolet;}
-    20% {color: rgb(18, 184, 206);}
-    25% {color: rgb(240, 217, 15);}
-    30% {color: rgb(252, 124, 4);}
-    40% {color: rgb(131, 243, 2);}
-    50% {color: rgb(9, 48, 58);}
-    55% {color: rgb(236, 13, 188);}
-    60% {color: rgb(233, 49, 49);}
-    70% {color: rgb(1, 28, 63);}
-    80% {color: rgb(20, 233, 116);}
-    90% {color: rgb(12, 226, 241);}
-    100% {color: rgb(0, 172, 43);}
+  0% {color: rgb(226, 66, 66);}
+  20% {color: rgb(18, 184, 206);}
+  40% {color: rgb(131, 243, 2);}
+  60% {color: rgb(233, 49, 49);}
+  80% {color: rgb(20, 233, 116);}
+  100% {color: rgb(0, 172, 43);}
 }
+
 
 * {
   margin: 0;
@@ -166,7 +160,7 @@ aside h6 {
   font-size: 15px;
   text-align: center;
   animation-name: body;
-  animation: body 60s infinite;
+  animation: body 90s infinite;
 }
 
 a {
@@ -252,6 +246,7 @@ aside p {
   text-align: center;
   color: var(--dark-mode-word)
 }
+
  
 @media (max-width: 800px) {
   body {
