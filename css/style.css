@@ -43,11 +43,25 @@ header {
   height: 100%;
 }
 
+.header-ul li{
+  display: flex;
+  justify-content: center;
+  align_items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header-ul li:hover{
+ background: var(--dark-mode-word);
+}
+
 .header-ul a {
+  display: flex;
+  justify-content: center;
+  align-items:center;
   text-decoration: none;
   color: white;
   width: 100%;
-  heigth: 100%;
   /* background: red; */
 }
 
@@ -80,12 +94,12 @@ main p {
 .container small {
   color: #bebebf;
   font-size: 0.75rem;
-  color: var(--dark-mode-word)
+  color: var(--dark-mode-word);
 }
 
 .container h1 {
   font-size: 2rem;
-  color: var(--dark-mode-word)
+  color: var(--dark-mode-word);
 }
 
 /* BOTÃO DARK MODE */
@@ -190,8 +204,8 @@ body.dark #title h1 {
 body.dark main p {
   color: var(--light-mode-word);
 }
-body.dark .footer-list ul li {
-  color: var(--light-mode-word);
+body.dark .footer ul li {
+  color: var(--strong-white);
 }
 
 /* Tamanho das fotos no main */
