@@ -13,30 +13,44 @@
   <title>A Arte do Entendimento Demorado</title>
 </head>
 <body>
-  <div class="manha-noite">
-    <input type="checkbox" class="checkbox" id="chk">
-    <label class="label" for="chk">
-      <i class="fas fa-moon"></i>
-      <i class="fas fa-sun"></i>
-      <div class="ball"></div>
-    </label>
+  <div id="title">
+    <h1>A Arte do Entendimento Demorado</h1>
+    <div class="manha-noite">
+      <input type="checkbox" class="checkbox" id="chk">
+      <label class="label" for="chk">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
   </div>
-  <aside>
-    <img src="./assets/logo-2.png" alt="Brain">
-    <img src="./assets/logoDnllira.png" alt="Daniel LOGO">
-    <span>
-      A Arte do Entendimento Demorado <br>
-    </span>
-    <h6>Novos posts de vez em quando</h6>
+  
+<header class="header">
+  <ul class="header-ul">
+    <li>
+      <a target="blank" href="">Menu</a>
+    </li>
 
-    
-  </aside>
+    <li>
+      <a target="blank" href="#">Novidade</a>
+    </li>
+
+    <li>
+      <a target="blank" href="#">Post popular</a>
+    </li>
+
+    <li>
+      <a target="blank" href="#">Loja</a>
+    </li>
+  </ul>
+</header>
+
   <main>
-    <div href="" target="_blank" class="memory">
+    <div class="container">
       <small>24 de março de 2023</small>
-      <h1>A Arte do Entendimento Demorado</h1>
+      <h1>Algo novo</h1>
       <div>
-        <img src="./assets/logo1.png" alt="Apresentação">
+        <img class="top1" src="./assets/logo1.png" alt="Apresentação">
       </div>
       <p>
         
@@ -64,11 +78,11 @@
           
         </p>
     </div>
-    <div href="" target="_blank" class="memory">
+    <div class="container">
       <small>20 de março de 2023</small>
       <h1>Olá a todos!</h1>
       <div>
-        <img src="./assets/universo.png" alt="Programador">
+        <img class="top2" src="./assets/universo.png" alt="Programador">
       </div>
       <p>
   
@@ -116,15 +130,17 @@
          
        </p>
     </div>
-    <section class="footer">
-      <div class="linha"></div>
+    
+    <!-- Rodapé -->
+    <div class="footer">
+      <div class="footer-line"></div>
       <div class="social">
         <a target="blank" href="https://github.com/Danielalveslira"><i class="fab fa-github"></i></a>
         <a target="_blank" href="https://wa.me/5584996550186"><i class="fab fa-whatsapp"></i></a>
         <a target="blank" href="https://www.linkedin.com/in/dnllira"><i class="fab fa-linkedin"></i></a>
       </div>
   
-      <ul class="list">
+      <ul class="footer-list">
         <li>
           <a target="blank" href="">Home</a>
         </li>
@@ -142,10 +158,10 @@
         </li>
       </ul>
       <p class="copyright">
-        &#169
+        &#169;
         2023 Todos os direitos reservados.
       </p>
-    </section>
+    </div>
   </main>
   <script src="./script.js/script.js"></script>
 </body>
