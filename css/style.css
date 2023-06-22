@@ -305,15 +305,17 @@ body.dark .footer ul li {
 }
 
  
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 
   main {
     width: 100vw;
+    flex-direction: column;
   }
 
   aside {
     border-right: none;
     padding: 32px 100px;
+    flex-direction: column;
   }
 
   .footer ul {
