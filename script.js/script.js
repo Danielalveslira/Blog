@@ -33,3 +33,16 @@ function loadDataFromLocalStorage(key) {
 function save() {
   saveDataToLocalStorage(localStorageKey, chk.checked);
 }
+
+function toggleContent(id) {
+  var content = document.getElementById('content' + id);
+  var button = document.getElementById('toggleButton' + id);
+
+  if (content.classList.contains('collapsed')) {
+    content.classList.remove('collapsed');
+    button.innerText = 'Leia Menos';
+  } else {
+    content.classList.add('collapsed');
+    button.innerText = 'Leia Mais';
+  }
+}
