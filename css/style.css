@@ -305,7 +305,7 @@ body.dark .footer ul li {
 }
 
  
-@media (max-width: 768px) {
+@media (max-width: 800px) {
 
   main {
     width: 100vw;
@@ -318,13 +318,37 @@ body.dark .footer ul li {
     flex-direction: column;
   }
 
-  .footer ul {
-    text-align: center;
-  }
-  
-  .footer ul li {
-    display: block;
-    padding: 10px;
+}
+
+@media (max-width: 800px) {
+  #title {
+    font-size: 12px;
+    padding: 32px 10px;
   }
 
+  .header {
+    font-size: 16px;
+  }
+
+  .header-ul li {
+    margin-right: 19px;
+  }
+  
 }
+
+@media (max-width: 320px) {
+  .footer {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .footer-line {
+    border-right: none;
+    padding: 16px;
+  }
+
+  .footer-list {
+    border-right: none;
+  }
+}
+
