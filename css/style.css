@@ -102,11 +102,7 @@ main p {
   color: var(--dark-mode-word);
 }
 
-.collapsed {
-  display: none;
-}
-
-#toggleButton {
+#button {
     border: none;
     padding: 6px;
     border-radius: 6px;
@@ -121,7 +117,7 @@ main p {
 /* BOTÃO DARK MODE */
 
 .label {
-  background-color: #111;
+  background-color: #2B2730;
   border-radius: 50px;
   cursor: pointer;
   
@@ -133,8 +129,6 @@ main p {
   position: relative;
   height: 26px;
   width: 50px;
-  
-  transform: scala(1.5)
 }
 .checkbox {
   opacity: 0;
@@ -223,9 +217,12 @@ body.dark main p {
 body.dark .footer ul li {
   color: var(--strong-white);
 }
-body.dark #toggleButton {
+body.dark #button {
   background-color: var(--strong-white);
   color: var(--dark-mode-word)
+}
+body.dark .label {
+  background-color: #2B2A4C;
 }
 
 /* Tamanho das fotos no main */
@@ -369,5 +366,13 @@ body.dark #toggleButton {
 @media (min-width: 768px) {
   .img {
     object-fit: cover;
+  }
+}
+
+@media (max-width: 800px) {
+  .fa-moon,
+  .fa-sun,
+  .ball {
+    font-size: 17px;
   }
 }
