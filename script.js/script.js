@@ -1,25 +1,38 @@
 const chk = document.getElementById('chk');
 const localStorageKey = "dark";
 
+// Adiciona o evento ao checkbox
 chk.addEventListener('change', () => {
-  toggleDarkMode(chk.checked);
-  saveDataToLocalStorage(localStorageKey, chk.checked);
+  const isDark = chk.checked;
+  toggleDarkMode(isDark);
+  saveDataToLocalStorage(localStorageKey, isDark);
 });
 
+// Função para inicializar e restaurar o estadoo
 initialize();
 
 function initialize() {
   const data = loadDataFromLocalStorage(localStorageKey);
 
-  if (data !== null && typeof data !== 'undefined') {
-    chk.checked = data;
-    toggleDarkMode(data);
+  // Se o dado existir no localStorage, aplicar
+  if (data !== null && data !== 'undefined') {
+    const isDark = JSON.parse(data);  // Converter para booleano
+    chk.checked = isDark;
+    toggleDarkMode(isDark);
   }
 }
 
+// Função para alternar o modo escuro
 function toggleDarkMode(isDark) {
   document.body.classList.toggle('dark', isDark);
 }
 
-// Fim do modo escuro
+// Função para salvar dados no localStorage
+function saveDataToLocalStorage(key, value) {
+  localStorage.setItem(key, JSON.stringify(value));
+}
 
+// Função para carregar dados do localStorage
+function loadDataFromLocalStorage(key) {
+  return localStorage.getItem(key);
+}
