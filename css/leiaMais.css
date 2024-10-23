@@ -16,6 +16,10 @@
   text-align: justify;
 }
 
+main .container {
+  margin: 30px auto;
+}
+
 .conteudo {
   overflow: hidden;
   display: -webkit-box;

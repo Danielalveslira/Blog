@@ -4,14 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Pré-conexões para otimizar carregamento de fontes -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="./assets/logo1.png" />
+
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/leiaMais.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -19,11 +26,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/leiaMais.css" />
+
     <title>A Arte do Entendimento Demorado</title>
   </head>
 
   <body>
+    <!-- Título e Alternador de Tema -->
     <div id="title">
       <h1>A Arte do Entendimento Demorado</h1>
       <div class="manha-noite">
@@ -36,17 +44,21 @@
       </div>
     </div>
 
+    <!-- Cabeçalho (Header) -->
     <header class="header">
-      <ul class="header-ul">
-        <li><a target="blank" href="">Menu</a></li>
-        <li><a target="blank" href="#">Novidade</a></li>
-        <li><a target="blank" href="#">Popular</a></li>
-        <li><a target="blank" href="#">Loja</a></li>
-      </ul>
+      <nav>
+        <ul class="header-ul">
+          <li><a href="#" target="_blank">Menu</a></li>
+          <li><a href="#" target="_blank">Novidade</a></li>
+          <li><a href="#" target="_blank">Popular</a></li>
+          <!-- <li><a href="#" target="_blank">Loja</a></li> -->
+        </ul>
+      </nav>
     </header>
 
+    <!-- Conteúdo Principal (Main) -->
     <main>
-      <div class="container">
+      <article class="container">
         <small>24 de março de 2023</small>
         <h1>Algo novo</h1>
 
@@ -54,7 +66,7 @@
           <img class="img" src="./assets/logo1.png" alt="Apresentação" />
         </div>
 
-        <div class="conteudo">
+        <section class="conteudo">
           <p>
             A Arte do Entendimento Demorado refere-se a uma abordagem que
             valoriza a paciência, a contemplação e a dedicação para alcançar um
@@ -67,36 +79,68 @@
             entanto, alguns assuntos ou questões complexas exigem tempo e
             esforço para serem verdadeiramente compreendidos.
           </p>
-        </div>
+        </section>
 
         <button id="toggleButton">Leia Mais</button>
-      </div>
+      </article>
 
-      <div class="footer">
-        <div class="footer-line"></div>
-        <div class="social">
-          <a target="blank" href="https://github.com/Danielalveslira">
-            <i class="fab fa-github"></i
-          ></a>
-          <a target="_blank" href="https://wa.me/5584996550186">
-            <i class="fab fa-whatsapp"></i
-          ></a>
-          <a target="blank" href="https://www.linkedin.com/in/dnllira">
-            <i class="fab fa-linkedin"></i
-          ></a>
+      <article class="container">
+        <small>24 de março de 2023</small>
+        <h1>Algo novo</h1>
+
+        <div>
+          <img class="img" src="./assets/logo1.png" alt="Apresentação" />
         </div>
 
-        <ul class="footer-list">
-          <li><a target="blank" href="">Home</a></li>
-          <li><a target="blank" href="#">Museu</a></li>
-          <li><a target="blank" href="#">Sobre</a></li>
-          <li><a target="blank" href="#">Status</a></li>
-        </ul>
+        <section class="conteudo">
+          <p>
+            A Arte do Entendimento Demorado refere-se a uma abordagem que
+            valoriza a paciência, a contemplação e a dedicação para alcançar um
+            nível mais profundo de compreensão.
+          </p>
 
-        <p class="copyright">&#169; 2024 Todos os direitos reservados.</p>
-      </div>
+          <p>
+            Em um mundo cada vez mais rápido e imediatista, muitas vezes
+            tendemos a buscar respostas rápidas e soluções instantâneas. No
+            entanto, alguns assuntos ou questões complexas exigem tempo e
+            esforço para serem verdadeiramente compreendidos.
+          </p>
+        </section>
+
+        <button id="toggleButton">Leia Mais</button>
+      </article>
     </main>
 
+    <!-- Rodapé (Footer) -->
+    <footer class="footer">
+      <div class="footer-line"></div>
+
+      <!-- Links Sociais -->
+      <div class="social">
+        <a href="https://github.com/Danielalveslira" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://wa.me/5584996550186" target="_blank">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/dnllira" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </div>
+
+      <!-- Links do Rodapé -->
+      <ul class="footer-list">
+        <li><a href="#" target="_blank">Home</a></li>
+        <li><a href="#" target="_blank">Museu</a></li>
+        <li><a href="#" target="_blank">Sobre</a></li>
+        <li><a href="#" target="_blank">Status</a></li>
+      </ul>
+
+      <!-- Copyright -->
+      <p class="copyright">&#169; 2024 Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Scripts JS -->
     <script src="./script.js/leiaMais.js"></script>
     <script src="./script.js/script.js"></script>
   </body>

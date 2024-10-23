@@ -1,16 +1,23 @@
-const toggleButton = document.getElementById('toggleButton');
-const conteudo = document.querySelector('.conteudo');
+// Seleciona todos os botões "Leia Mais" e os respectivos conteúdos
+const toggleButtons = document.querySelectorAll('#toggleButton');
+const conteudos = document.querySelectorAll('.conteudo');
 
-let expandido = false;
+// Adiciona evento de clique para cada botão individualmente
+toggleButtons.forEach((button, index) => {
+  let expandido = false; // Estado inicial para cada botão
 
-toggleButton.addEventListener('click', () => {
-  expandido = !expandido; // Alterna o estado
+  button.addEventListener('click', () => {
+    expandido = !expandido; // Alterna o estado
 
-  if (expandido) {
-    conteudo.classList.add('expandido'); // Expande o conteúdo
-    toggleButton.textContent = 'Minimizar';
-  } else {
-    conteudo.classList.remove('expandido'); // Minimiza para 2 linhas
-    toggleButton.textContent = 'Leia Mais';
-  }
+    // Seleciona o conteúdo correspondente ao botão
+    const conteudo = conteudos[index];
+
+    if (expandido) {
+      conteudo.classList.add('expandido'); // Expande o conteúdo
+      button.textContent = 'Minimizar';
+    } else {
+      conteudo.classList.remove('expandido'); // Minimiza o conteúdo
+      button.textContent = 'Leia Mais';
+    }
+  });
 });
