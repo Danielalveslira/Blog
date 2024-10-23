@@ -54,6 +54,7 @@ body.dark .label {
 
 /* CABEÇALHO (HEADER) */
 header {
+  margin: 10px auto;
   display: flex;
   justify-content: center;
   width: 100vw;
@@ -82,6 +83,7 @@ header {
   background: var(--dark-mode-word);
 }
 .header-ul a {
+  padding: 10px 40px;
   display: flex;
   justify-content: center;
   align-items: center;
